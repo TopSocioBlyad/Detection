@@ -1,0 +1,95 @@
+{
+  "data_root": "data_reid",
+  "total_files": 312,
+  "identity_counts": {
+    "pothole_001": 61,
+    "pothole_002": 55,
+    "pothole_003": 30,
+    "pothole_004": 29,
+    "pothole_005": 27,
+    "pothole_006": 25,
+    "pothole_007": 23,
+    "pothole_008": 20,
+    "pothole_009": 16,
+    "pothole_010": 10,
+    "pothole_011": 9,
+    "pothole_012": 7
+  },
+  "extensions": {
+    ".png": 312
+  },
+  "decoded_image_layouts": [
+    {
+      "width": 400,
+      "height": 400,
+      "channels": 3,
+      "dtype": "uint8",
+      "count": 312
+    }
+  ],
+  "unreadable_files": [],
+  "quality_status_counts": {
+    "exact_duplicate": 6,
+    "near_duplicate": 6,
+    "ok": 300
+  },
+  "exact_duplicate_sets": [
+    [
+      "data_reid/pothole_003/0050.png",
+      "data_reid/pothole_003/0056.png"
+    ],
+    [
+      "data_reid/pothole_003/0051.png",
+      "data_reid/pothole_003/0057.png"
+    ],
+    [
+      "data_reid/pothole_003/0052.png",
+      "data_reid/pothole_003/0058.png"
+    ],
+    [
+      "data_reid/pothole_003/0053.png",
+      "data_reid/pothole_003/0059.png"
+    ],
+    [
+      "data_reid/pothole_003/0054.png",
+      "data_reid/pothole_003/0060.png"
+    ],
+    [
+      "data_reid/pothole_003/0055.png",
+      "data_reid/pothole_003/0061.png"
+    ]
+  ],
+  "near_duplicate_candidate_sets": [
+    [
+      "data_reid/pothole_003/0065.png",
+      "data_reid/pothole_003/0071.png"
+    ],
+    [
+      "data_reid/pothole_003/0066.png",
+      "data_reid/pothole_003/0072.png"
+    ],
+    [
+      "data_reid/pothole_003/0067.png",
+      "data_reid/pothole_003/0073.png"
+    ],
+    [
+      "data_reid/pothole_003/0068.png",
+      "data_reid/pothole_003/0074.png"
+    ],
+    [
+      "data_reid/pothole_003/0069.png",
+      "data_reid/pothole_003/0075.png"
+    ],
+    [
+      "data_reid/pothole_003/0070.png",
+      "data_reid/pothole_003/0076.png"
+    ]
+  ],
+  "metadata_notes": [
+    "Folder names are ground-truth identities and must not be used by a predictor.",
+    "Current filenames contain no training/validation/testing prefix, so source_split is unknown.",
+    "Numeric filenames and adjacency do not establish an independent capture; capture_id is unknown.",
+    "Near-duplicate candidates have identical rotation-invariant perceptual hashes within one identity.",
+    "The dataset has no masks, so the number of visible potholes cannot be certified automatically."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "protocol": "held_out_identity_open_set_gallery_query",
+  "gallery_per_identity": 2,
+  "episode_design": "Each three-identity test fold is evaluated in three episodes. One identity is absent from the gallery and the other two are known.",
+  "threshold_source": "training identities from results/reid_pair_cv/summary.json",
+  "results": {
+    "SIFT": {
+      "samples": 852,
+      "known_queries": 552,
+      "unknown_queries": 300,
+      "rank1_identification_rate": 0.9130434782608695,
+      "false_reject_rate": 0.08695652173913043,
+      "misidentification_rate": 0.0,
+      "correct_rejection_rate": 1.0,
+      "false_accept_rate": 0.0,
+      "overall_accuracy": 0.9436619718309859,
+      "status_counts": {
+        "correct_identity": 504,
+        "correct_reject": 300,
+        "false_reject": 48
+      },
+      "mean_query_matching_ms": 50.87317923578735,
+      "mean_query_total_ms": 79.19198946011237
+    },
+    "ORB": {
+      "samples": 852,
+      "known_queries": 552,
+      "unknown_queries": 300,
+      "rank1_identification_rate": 0.8913043478260869,
+      "false_reject_rate": 0.10869565217391304,
+      "misidentification_rate": 0.0,
+      "correct_rejection_rate": 1.0,
+      "false_accept_rate": 0.0,
+      "overall_accuracy": 0.9295774647887324,
+      "status_counts": {
+        "correct_identity": 492,
+        "correct_reject": 300,
+        "false_reject": 60
+      },
+      "mean_query_matching_ms": 48.46541727107559,
+      "mean_query_total_ms": 53.30753772164066
+    },
+    "AKAZE": {
+      "samples": 852,
+      "known_queries": 552,
+      "unknown_queries": 300,
+      "rank1_identification_rate": 0.9311594202898551,
+      "false_reject_rate": 0.06884057971014493,
+      "misidentification_rate": 0.0,
+      "correct_rejection_rate": 0.9766666666666667,
+      "false_accept_rate": 0.023333333333333334,
+      "overall_accuracy": 0.9471830985915493,
+      "status_counts": {
+        "correct_identity": 514,
+        "correct_reject": 293,
+        "false_accept": 7,
+        "false_reject": 38
+      },
+      "mean_query_matching_ms": 98.57122205409549,
+      "mean_query_total_ms": 116.85110685093477
+    },
+    "BRISK": {
+      "samples": 852,
+      "known_queries": 552,
+      "unknown_queries": 300,
+      "rank1_identification_rate": 0.9094202898550725,
+      "false_reject_rate": 0.09057971014492754,
+      "misidentification_rate": 0.0,
+      "correct_rejection_rate": 1.0,
+      "false_accept_rate": 0.0,
+      "overall_accuracy": 0.9413145539906104,
+      "status_counts": {
+        "correct_identity": 502,
+        "correct_reject": 300,
+        "false_reject": 50
+      },
+      "mean_query_matching_ms": 111.25067780064451,
+      "mean_query_total_ms": 138.86004102946765
+    }
+  },
+  "notes": [
+    "Gallery references and queries are different files, with manifest duplicates excluded.",
+    "Capture IDs are unknown, so gallery/query files may come from one recording.",
+    "Episodes reuse queries under different known/unknown gallery compositions and are correlated.",
+    "The predictor sees image features and calibrated scores, never pothole_id."
+  ]
+}
