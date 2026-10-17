@@ -1,3 +1,4 @@
-# SIFT доступен в стандартном opencv-python (opencv-contrib-python пока не требуется).
-opencv-python>=4.8,<5
-numpy>=1.24,<3
+# Зафиксированная версия OpenCV для воспроизводимости этапов 1–7.
+opencv-contrib-python==4.11.0.86
+numpy==2.5.4
+matplotlib==3.11.2
