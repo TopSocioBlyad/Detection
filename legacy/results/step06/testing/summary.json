@@ -1,0 +1,252 @@
+{
+  "split": "testing",
+  "protocol": "step05_matching_fixed",
+  "full_testing": true,
+  "data_root": "data",
+  "dataset_records": 180,
+  "templates_requested": 180,
+  "templates_evaluated": 180,
+  "scenarios": [
+    "identity",
+    "rotate_60",
+    "scale_0.75",
+    "perspective",
+    "darker",
+    "blur_sigma_0.8",
+    "blur_sigma_1.5",
+    "blur_sigma_2.5"
+  ],
+  "negatives_per_template": 1,
+  "seed": 42,
+  "padding": 45,
+  "iou_success_threshold": 0.5,
+  "frozen_config_file": "results\\step05\\validation\\best_configs.json",
+  "frozen_config_sha256": "019aef271a22de06e17ca551c62a5e1f20d1560622361b5534467da846643869",
+  "opencv_version": "4.11.0",
+  "numpy_version": "2.5.4",
+  "best_configs_used": {
+    "SIFT": {
+      "ratio": 0.7,
+      "min_inliers": 6,
+      "ransac_threshold": 3.0,
+      "min_inlier_ratio": 0.35,
+      "nfeatures": 2000,
+      "akaze_threshold": null,
+      "validation_f1": 0.883217
+    },
+    "ORB": {
+      "ratio": 0.8,
+      "min_inliers": 10,
+      "ransac_threshold": 3.0,
+      "min_inlier_ratio": 0.35,
+      "nfeatures": 2000,
+      "akaze_threshold": null,
+      "validation_f1": 0.885296
+    },
+    "AKAZE": {
+      "ratio": 0.8,
+      "min_inliers": 6,
+      "ransac_threshold": 3.0,
+      "min_inlier_ratio": 0.35,
+      "nfeatures": 2000,
+      "akaze_threshold": 0.0001,
+      "validation_f1": 0.99162
+    },
+    "BRISK": {
+      "ratio": 0.85,
+      "min_inliers": 6,
+      "ransac_threshold": 3.0,
+      "min_inlier_ratio": 0.35,
+      "nfeatures": 2000,
+      "akaze_threshold": null,
+      "validation_f1": 0.858939
+    }
+  },
+  "results": {
+    "SIFT": {
+      "samples": 1620,
+      "positives": 1440,
+      "negatives": 180,
+      "tp": 1423,
+      "fp": 19,
+      "fn": 17,
+      "tn": 161,
+      "fp_wrong_localization": 0,
+      "fp_negative_pairs": 19,
+      "precision": 0.986824,
+      "recall": 0.988194,
+      "f1": 0.987509,
+      "localization_success_rate": 0.988194,
+      "mean_iou_including_failures": 0.981875,
+      "mean_iou_successful": 0.993605,
+      "mean_good_matches": 246.331,
+      "mean_inliers": 245.328,
+      "mean_inlier_ratio": 0.881,
+      "mean_kp_template": 676.656,
+      "mean_kp_scene": 1199.444,
+      "runtime_ms": {
+        "mean": 23.058,
+        "median": 22.77,
+        "p95": 31.562
+      },
+      "template_ms": {
+        "mean": 8.099,
+        "median": 6.445,
+        "p95": 18.538
+      },
+      "total_ms": {
+        "mean": 31.156,
+        "median": 29.664,
+        "p95": 49.163
+      },
+      "reasons": {
+        "few_inliers": 13,
+        "few_matches": 162,
+        "no_homography": 3,
+        "ok": 1442
+      }
+    },
+    "ORB": {
+      "samples": 1620,
+      "positives": 1440,
+      "negatives": 180,
+      "tp": 1326,
+      "fp": 42,
+      "fn": 114,
+      "tn": 161,
+      "fp_wrong_localization": 23,
+      "fp_negative_pairs": 19,
+      "precision": 0.969298,
+      "recall": 0.920833,
+      "f1": 0.944444,
+      "localization_success_rate": 0.920833,
+      "mean_iou_including_failures": 0.904975,
+      "mean_iou_successful": 0.978404,
+      "mean_good_matches": 227.182,
+      "mean_inliers": 205.149,
+      "mean_inlier_ratio": 0.794,
+      "mean_kp_template": 843.922,
+      "mean_kp_scene": 1410.554,
+      "runtime_ms": {
+        "mean": 8.008,
+        "median": 7.31,
+        "p95": 12.577
+      },
+      "template_ms": {
+        "mean": 4.208,
+        "median": 1.865,
+        "p95": 4.985
+      },
+      "total_ms": {
+        "mean": 12.217,
+        "median": 9.271,
+        "p95": 17.084
+      },
+      "reasons": {
+        "few_inliers": 200,
+        "few_matches": 26,
+        "invalid_geometry": 16,
+        "no_homography": 10,
+        "ok": 1368
+      }
+    },
+    "AKAZE": {
+      "samples": 1620,
+      "positives": 1440,
+      "negatives": 180,
+      "tp": 1439,
+      "fp": 21,
+      "fn": 1,
+      "tn": 160,
+      "fp_wrong_localization": 1,
+      "fp_negative_pairs": 20,
+      "precision": 0.985616,
+      "recall": 0.999306,
+      "f1": 0.992414,
+      "localization_success_rate": 0.999306,
+      "mean_iou_including_failures": 0.993919,
+      "mean_iou_successful": 0.994267,
+      "mean_good_matches": 237.036,
+      "mean_inliers": 229.377,
+      "mean_inlier_ratio": 0.874,
+      "mean_kp_template": 497.911,
+      "mean_kp_scene": 1637.969,
+      "runtime_ms": {
+        "mean": 14.468,
+        "median": 13.82,
+        "p95": 20.13
+      },
+      "template_ms": {
+        "mean": 4.738,
+        "median": 3.891,
+        "p95": 11.127
+      },
+      "total_ms": {
+        "mean": 19.206,
+        "median": 17.688,
+        "p95": 30.804
+      },
+      "reasons": {
+        "few_inliers": 90,
+        "few_matches": 61,
+        "no_homography": 9,
+        "ok": 1460
+      }
+    },
+    "BRISK": {
+      "samples": 1620,
+      "positives": 1440,
+      "negatives": 180,
+      "tp": 1224,
+      "fp": 47,
+      "fn": 216,
+      "tn": 156,
+      "fp_wrong_localization": 23,
+      "fp_negative_pairs": 24,
+      "precision": 0.963021,
+      "recall": 0.85,
+      "f1": 0.902988,
+      "localization_success_rate": 0.85,
+      "mean_iou_including_failures": 0.84399,
+      "mean_iou_successful": 0.990955,
+      "mean_good_matches": 189.933,
+      "mean_inliers": 173.307,
+      "mean_inlier_ratio": 0.766,
+      "mean_kp_template": 549.956,
+      "mean_kp_scene": 1469.547,
+      "runtime_ms": {
+        "mean": 25.719,
+        "median": 14.835,
+        "p95": 85.453
+      },
+      "template_ms": {
+        "mean": 9.015,
+        "median": 6.806,
+        "p95": 30.027
+      },
+      "total_ms": {
+        "mean": 34.735,
+        "median": 22.184,
+        "p95": 96.673
+      },
+      "reasons": {
+        "empty_prediction": 1,
+        "few_inliers": 243,
+        "few_matches": 16,
+        "invalid_geometry": 64,
+        "no_descriptors": 2,
+        "no_homography": 23,
+        "ok": 1271
+      }
+    }
+  },
+  "skipped_count": 0,
+  "notes": [
+    "Положительные пары: искусственные преобразования ОДНОГО RGB кадра, не независимые съёмки.",
+    "Отрицательные пары: другие файлы testing; идентичность физических ям неизвестна.",
+    "FP за неверную локализацию на положительной паре одновременно учитывается как FN.",
+    "IoU вычисляется после детекции; истинная маска не передаётся алгоритму принятия решения.",
+    "runtime_ms не включает построение шаблона и извлечение его признаков; total_ms = runtime_ms + template_ms (стоимость извлечения признаков шаблона отнесена к каждой паре, без подготовки ROI и генерации сцены).",
+    "При тестировании параметры не изменялись. Не выбирать новые параметры по этому split."
+  ]
+}

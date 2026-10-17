@@ -1,0 +1,66 @@
+{
+  "split": "validation",
+  "records": 180,
+  "templates_evaluated": 180,
+  "phase": "matching",
+  "scenarios": [
+    "identity",
+    "rotate_60",
+    "scale_0.75",
+    "perspective",
+    "darker",
+    "blur_sigma_0.8",
+    "blur_sigma_1.5",
+    "blur_sigma_2.5"
+  ],
+  "negatives_per_template": 1,
+  "seed": 42,
+  "selected_akaze_threshold": 0.0001,
+  "best_configs": {
+    "SIFT": {
+      "ratio": 0.7,
+      "min_inliers": 6,
+      "ransac_threshold": 3.0,
+      "min_inlier_ratio": 0.35,
+      "nfeatures": 2000,
+      "akaze_threshold": null,
+      "validation_f1": 0.883217
+    },
+    "ORB": {
+      "ratio": 0.8,
+      "min_inliers": 10,
+      "ransac_threshold": 3.0,
+      "min_inlier_ratio": 0.35,
+      "nfeatures": 2000,
+      "akaze_threshold": null,
+      "validation_f1": 0.885296
+    },
+    "AKAZE": {
+      "ratio": 0.8,
+      "min_inliers": 6,
+      "ransac_threshold": 3.0,
+      "min_inlier_ratio": 0.35,
+      "nfeatures": 2000,
+      "akaze_threshold": 0.0001,
+      "validation_f1": 0.99162
+    },
+    "BRISK": {
+      "ratio": 0.85,
+      "min_inliers": 6,
+      "ransac_threshold": 3.0,
+      "min_inlier_ratio": 0.35,
+      "nfeatures": 2000,
+      "akaze_threshold": null,
+      "validation_f1": 0.858939
+    }
+  },
+  "skipped": [],
+  "notes": [
+    "Synthetic positives are correlated; do not treat as independent photographs.",
+    "Different file IDs may show the same real pothole; manually inspect negative false positives.",
+    "No ground truth mask is used when the algorithm decides 'found'.",
+    "Validation F1 is selection score, NOT an unbiased final test result.",
+    "SIFT/ORB/AKAZE/BRISK share numerical ratio/inlier grids; other settings differ by detector."
+  ],
+  "note": "Восстановлено из matching_grid.csv после полного перебора параметров."
+}

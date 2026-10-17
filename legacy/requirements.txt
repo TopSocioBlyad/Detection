@@ -1,0 +1,3 @@
+# SIFT доступен в стандартном opencv-python (opencv-contrib-python пока не требуется).
+opencv-python>=4.8,<5
+numpy>=1.24,<3

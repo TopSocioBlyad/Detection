@@ -1,0 +1,21 @@
+{
+  "rgb_path": "data\\testing\\rgb\\0050.png",
+  "label_path": "data\\testing\\label\\0050.png",
+  "template_bbox_xyxy": [
+    104,
+    0,
+    274,
+    153
+  ],
+  "image_size": [
+    400,
+    400
+  ],
+  "template_keypoints": 406,
+  "scene_keypoints": 2001,
+  "knn_pairs": 406,
+  "matches_after_ratio": 198,
+  "ratio_threshold": 0.75,
+  "runtime_ms": 134.66,
+  "note": "Гомография пока не оценивается алгоритмом. Зелёный контур на 06 — известное истинное положение."
+}

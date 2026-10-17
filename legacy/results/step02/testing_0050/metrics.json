@@ -1,0 +1,40 @@
+{
+  "rgb_path": "data\\testing\\rgb\\0050.png",
+  "label_path": "data\\testing\\label\\0050.png",
+  "template_bbox_xyxy": [
+    104,
+    0,
+    274,
+    153
+  ],
+  "template_keypoints": 406,
+  "scene_keypoints": 2001,
+  "matches_after_ratio": 198,
+  "ransac_inliers": 198,
+  "inlier_ratio": 1.0,
+  "mean_inlier_reprojection_error_px": 0.1173,
+  "found": true,
+  "reason": "ok",
+  "iou": 0.9979,
+  "runtime_ms": 157.96,
+  "ratio_threshold": 0.75,
+  "ransac_threshold_px": 3.0,
+  "estimated_homography": [
+    [
+      0.9371903538895198,
+      -0.014269091736474827,
+      115.20907862813475
+    ],
+    [
+      0.030191647023381413,
+      0.9000505875222349,
+      13.029242812502183
+    ],
+    [
+      0.00014187890570642727,
+      -0.00011212773503771111,
+      0.9999999999999999
+    ]
+  ],
+  "note": "IoU вычисляется по синтетически преобразованной маске. Это не тест реального изменения ракурса."
+}
